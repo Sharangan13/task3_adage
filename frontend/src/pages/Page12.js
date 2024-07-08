@@ -5,7 +5,7 @@ import { IoMdArrowRoundForward, IoMdArrowRoundBack } from "react-icons/io";
 const reviews = [
   {
     id: 1,
-    user: "User1",
+    user: "John Smith",
     rating: 4.9,
     date: "4 Jan 2024",
     content:
@@ -13,7 +13,7 @@ const reviews = [
   },
   {
     id: 2,
-    user: "User2",
+    user: "Verified RUJ User",
     rating: 4.8,
     date: "3 Jan 2024",
     content:
@@ -63,7 +63,7 @@ export default function Page12() {
   const displayedReviews = reviews.slice(startIndex, startIndex + 2);
 
   return (
-    <div className="col-12 px-2 px-md-5 py-5">
+    <div className="col-12 px-2 px-md-5 py-5" id="page12">
       <div className="_line">
         <h1>Reviews</h1>
       </div>
@@ -95,7 +95,7 @@ export default function Page12() {
             <div key={review.id} className="review_box">
               <div className="col-12 px-3 py-1">
                 <div className="d-flex justify-content-between">
-                  <div className="d-flex">
+                  <div className="d-flex user_round_box_div">
                     <div className="user_round_box">
                       <LuUser />
                     </div>
@@ -106,7 +106,7 @@ export default function Page12() {
                   </p>
                 </div>
                 <p><span className="Reviewed_color">Reviewed: {review.date}</span></p>
-                <p>{review.content}</p>
+                <p className="review_content">{review.content}</p>
               </div>
             </div>
           ))}

@@ -21,7 +21,7 @@ export default function Page1() {
     <div className="page_1_main_div position-relative d-none d-md-block">
     <div className="col-12 d-flex px-5 page1">
       <div className="col-6 ps-4">
-        <div className="col-12 mt-5">
+        <div className="col-12 mt-5 px-5 px-md-0">
           <p className="page1_h1">
             Explore Our <span>Spaces</span>{" "}
           </p>
@@ -154,9 +154,9 @@ export default function Page1() {
           </div>
           
         </Carousel>
-        <div className="position-absolute top-50 start-50 translate-middle">
+        <div className="position-absolute top-50 start-50 translate-middle zoomicon_div">
                   <button className="camera_icon_mobile">
-                 <Link to="/booking"><VscZoomIn className="fs-1"/></Link>
+                 <Link to="/booking"><VscZoomIn className="fs-1 zoomicon"/></Link>
                   </button>
                 </div>
       </div>

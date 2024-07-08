@@ -7,13 +7,14 @@ import Page10 from '../Page10'
 import Page11_map from '../Page11_map'
 import Page12 from '../Page12'
 import Page13 from '../Page13'
+import NavBarOtherPages from '../../layouts/NavBarOtherPages'
 
 
 
 export default function Booking() {
   return (
     <div>
-      <Navbar/>
+      <NavBarOtherPages/>
       <Page7/>
       <Page8/>
       <Page9/>

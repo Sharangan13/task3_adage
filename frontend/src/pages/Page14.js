@@ -13,6 +13,7 @@ import React, { useRef, useState } from "react";
 import moment from "moment";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import "bootstrap-daterangepicker/daterangepicker.css";
+import BackButton from "../layouts/BackButton";
 
 export default function Page14() {
   // const getTomorrowDate = () => {
@@ -58,16 +59,11 @@ export default function Page14() {
   return (
     <div className="py-5 page14_main_div">
       <div className="col-12">
-        <div className="col-12 mb-3">
-          <button className="page14_btn1">
-            <IoArrowBackSharp className="btn_arrow" /> Back to property details
-            page
-          </button>
-        </div>
+        <BackButton/>
         <div className="px-3 py-3 page14_box1 m-2">
           <p className="section-title">Check-in info</p>
           <div className="d-flex justify-content-between align-items-center page_14_form_feild">
-            <p>No. of nights</p>
+            <p className="mb-0">No. of nights</p>
             <div className="d-flex align-items-center justify-content-center page14_selected_date_range_text">
               <p className="m-0">
                 {dates.startDate.format("DD MMM")} -{" "}
@@ -94,7 +90,7 @@ export default function Page14() {
                     firstRange: false,
                   }}
                 >
-                  <div className="user_round_box ms-2">
+                  <div className="user_round_box_page14 ms-2">
                     <MdModeEdit />
                   </div>
                 </DateRangePicker>
@@ -103,17 +99,17 @@ export default function Page14() {
           </div>
           <hr className="col-12" />
           <div className="d-flex justify-content-between align-items-center page_14_form_feild">
-            <p>No. of Adults</p>
+            <p className="mb-0">No. of Adults</p>
             <div className="d-flex align-items-center">
               <div
-                className="user_round_box ms-2"
+                className="user_round_box_page14 ms-2"
                 onClick={() => handleAdultsChange(-1)}
               >
                 <FaMinus />
               </div>
               <p className="count">{adults}</p>
               <div
-                className="user_round_box ms-2"
+                className="user_round_box_page14 ms-2"
                 onClick={() => handleAdultsChange(1)}
               >
                 <FaPlus />
@@ -122,17 +118,17 @@ export default function Page14() {
           </div>
           <hr className="col-12" />
           <div className="d-flex justify-content-between align-items-center page_14_form_feild">
-            <p>No. of Children</p>
+            <p className="mb-0">No. of Children</p>
             <div className="d-flex align-items-center">
               <div
-                className="user_round_box ms-2"
+                className="user_round_box_page14 ms-2"
                 onClick={() => handleChildrenChange(-1)}
               >
                 <FaMinus />
               </div>
               <p className="count">{children}</p>
               <div
-                className="user_round_box ms-2"
+                className="user_round_box_page14 ms-2"
                 onClick={() => handleChildrenChange(1)}
               >
                 <FaPlus />
@@ -147,24 +143,24 @@ export default function Page14() {
           <div className="px-3 py-3 page14_box1 m-2">
             <div className="col-6 d-flex align-items-center">
               <img src={page14_1} className="img-fluid me-2 " />
-              <p className="mb-0">Colombo 07, Sri Lanka</p>
+              <p className="mb-0  colombo_page14_heding">Colombo 07, Sri Lanka</p>
             </div>
-            <p className="section-title">Serene Heights Colombo</p>
+            <p className="under_colombo_section_title pt-4">Serene Heights Colombo</p>
 
             <img src={page1_1} className="img-fluid me-2 rounded" />
-            <a href="#">See apartment details</a>
+            <p className="mb-1 page14_p_heading pt-3"><u>See apartment details</u></p>
 
             <div className="col-10 d-flex align-items-center">
               <img src={users} className="img-fluid me-2 " />
-              <p className="mb-0">Max 6 guests</p>
+              <p className="mb-1 page14_p1 pt-2">Max 6 guests</p>
             </div>
             <div className="col-10 d-flex align-items-center">
               <img src={mail} className="img-fluid me-2 " />
-              <p className="mb-0">Instant email confirmation</p>
+              <p className="mb-1 page14_p1 pt-2">Instant email confirmation</p>
             </div>
             <div className="col-10 d-flex align-items-center">
-              <img src={check_circle} className="img-fluid me-2 " />
-              <p className="mb-0">
+              <img src={check_circle} className="img-fluid me-2" />
+              <p className="mb-0 page14_p1 pt-2 pb-3">
                 Free cancellation until 05/29/2024, 00:00 (GMT +8.00)
               </p>
             </div>
@@ -173,31 +169,30 @@ export default function Page14() {
 
         <div className="col-12 col-md-6 py-3 py-md-0">
           <div className="px-3 py-3 page14_box1 m-2 ">
-            <div className="d-flex justify-content-between">
-              <p>
+            <div className="d-flex justify-content-between align-items-center page14_final_p">
+              <p className="mb-0 ">
                 {Math.round(
                   (dates.endDate - dates.startDate) / (1000 * 60 * 60 * 24)
                 )}{" "}
                 nights
               </p>
-              <p>
-                £
-                {(
+              <p className="page14_final_p_ammount">
+                 £ {(
                   Math.round(
                     (dates.endDate - dates.startDate) / (1000 * 60 * 60 * 24)
                   ) * oneNightCos
                 ).toFixed(2)}
               </p>
             </div>
-            <hr className="col-12" />
-            <div className="d-flex justify-content-between">
-              <p>Taxes & fees</p>
-              <p>£ {tax}</p>
+            <div className="dotted-line col-12"></div>
+            <div className="d-flex justify-content-between align-items-center mt-3 page14_final_p">
+              <p >Taxes & fees</p>
+              <p className="page14_final_p_ammount"> £ {tax}</p>
             </div>
 
-            <hr className="col-12" />
+            <div className="dotted-line col-12"></div>
 
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-items-center">
               <p className="payement_ammount_p">Payment amount</p>
               <p className="amount">
                 £
@@ -211,13 +206,13 @@ export default function Page14() {
               </p>
             </div>
           </div>
-          <div className="px-2 pt-5 pb-2 pt-md-0 pb-md-0">
-            <button className="col-12 page2_btn">
+          <div className="px-2 pt-5 pb-2 pt-md-0 pb-md-0 mt-3">
+            <button className="col-12 page2_btn_Continue_to_Pay">
               <IoMdLock /> Continue to Pay
             </button>
           </div>
           <div className="px-4">
-            <p>
+            <p className="pt-4 page14_last_phra">
               Cancellation policy may require guests to give notice regarding
               their booking at least fourteen days in advance of their booking
               start date. Our Account Managers will also confirm, and can
@@ -228,8 +223,8 @@ export default function Page14() {
             </p>
           </div>
 
-          <div className="px-4">
-            <p>Read our <a href="">RUJ’s cancellation policy</a></p>
+          <div className="px-4 page14_last_phra_under_link">
+            <p>Read our <span>RUJ’s cancellation policy</span></p>
           </div>
         </div>
       </div>

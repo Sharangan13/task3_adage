@@ -15,7 +15,7 @@ import { IoCheckmark } from "react-icons/io5";
 
 export default function Page10() {
   return (
-    <div className='col-12 px-3 px-md-5 pb-5'>
+    <div className='col-12 px-3 px-md-5 pb-5' id='page10'>
 <div className="_line">
       <h1>What’s available in the apartment</h1>
       </div>

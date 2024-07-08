@@ -14,6 +14,8 @@ import train from '../assets/train.svg';
 import plane from '../assets/plane.svg';
 import map_pin from '../assets/map_pin.svg';
 import { Modal, Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Page8() {
   const truncateText = useCallback((text, wordLimit) => {
@@ -87,7 +89,7 @@ export default function Page8() {
           <p className="p1">£180</p>
           <p className="p2">£200.44</p>
           <p className="p3">Incl. taxes per night</p>
-          <button className="Reserve_btn col-4">Reserve</button>
+         <Link to="reservation"><button className="Reserve_btn col-4">Reserve</button></Link> 
         </div>
       </div>
 
@@ -98,7 +100,7 @@ export default function Page8() {
         <div className="d-flex justify-content-between">
           <div className="page8_box_content">
             <p className="page8_p1">Great!</p>
-            <a href="#">5 reviews</a>
+           <ScrollLink to="page12"><a><u>5 reviews</u></a></ScrollLink> 
           </div>
           <div className="page8_rating_content ">
             <p className="page8_rate_p1">4.9<span>/5</span></p>
@@ -114,7 +116,7 @@ export default function Page8() {
       </div>
     </div>
     <div className="col-12 col-md-4 d-flex align-items-stretch">
-      <div className="px-3 py-3 page8_box me-0 me-md-2 w-100">
+      <div className="px-3 py-3 page8_box page8_box2 me-0 me-md-2 w-100">
         <div>
           <div className="d-block d-md-flex py-0 py-md-2">
             <div className="col-12 col-md-6 d-flex align-items-center py-2 py-md-0">
@@ -146,25 +148,25 @@ export default function Page8() {
               <p className="mb-0">Washing Machine</p>
             </div>
           </div>
-       <div className="showmore_a_tag_page8"> <a href="#" onClick={() => setModalShow(true)} >show more (10+)</a></div>  
+     <ScrollLink to="page10"> <div className="showmore_a_tag_page8"> <a href="#">show more (10+)</a></div></ScrollLink>
         </div>
       </div>
     </div>
     <div className="col-12 col-md-4 d-flex align-items-stretch">
-      <div className="px-3 py-3 page8_box me-0 me-md-2 w-100">
+      <div className="px-3 py-3 page8_box  me-0 me-md-2 w-100">
         <div>
           <p className="page8_box_3_p1">433, Goal Road</p>
-          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div">
+          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div ">
             <img src={train} className="img-fluid me-2" />
-            <p className="mb-0">Bambalapitiya Railway Station, 700m</p>
+            <p className="mb-0 page8_box3_phra">Bambalapitiya Railway Station, 700m</p>
           </div>
-          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div">
+          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div ">
             <img src={plane} className="img-fluid me-2" />
-            <p className="mb-0">Colombo Ratmalana Airport, 9.4km</p>
+            <p className="mb-0 page8_box3_phra">Colombo Ratmalana Airport, 9.4km</p>
           </div>
-          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div_map_icon">
+          <div className="col-12 d-flex align-items-center py-2 page8_box_3_div_map_icon ">
             <img src={map_pin} className="img-fluid me-2" />
-            <a href="https://www.google.com/maps/place/123+Serenity+Avenue,+Colombo+05,+Sri+Lanka/@6.9271,79.8612,17z" target="_blank" rel="noopener noreferrer">Show map</a>
+            <ScrollLink to="page11_map"><a target="_blank" rel="noopener noreferrer"><u>Show map</u></a></ScrollLink>
           </div>
         </div>
       </div>
@@ -178,7 +180,7 @@ export default function Page8() {
           <p className="p2">£200.44</p>
           <p className="p3">Incl. taxes per night</p>
           </div>
-          <div className="Reserve_btn_sticky"><button className="col-12">Reserve</button></div>
+         <Link to="reservation"><div className="Reserve_btn_sticky"><button className="col-12">Reserve</button></div></Link> 
         </div>
 
 

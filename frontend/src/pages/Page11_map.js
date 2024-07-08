@@ -9,7 +9,7 @@ export default function Page11_map() {
     "https://www.google.com/maps/place/123+Serenity+Avenue,+Colombo+05,+Sri+Lanka/@6.9271,79.8612,17z";
 
   return (
-    <div className="col-12 map py-5">
+    <div className="col-12 map py-5" id="page11_map">
       <div className="px-2 px-md-5 map_div">
       <div className="_line">
       <h1>Where you’ll be</h1>

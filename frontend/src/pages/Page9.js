@@ -11,7 +11,7 @@ export default function Page9() {
 <div className="d-none d-md-block">
       <div className="row">
         <div className="col-3">
-          <h3>Transport</h3>
+          <h3 className="page_9_heading_sub">Transport</h3>
         </div>
 
         <div className="col-12 col-md-9">
@@ -39,7 +39,7 @@ export default function Page9() {
 
       <div className="row py-5">
         <div className="col-md-3">
-          <h3>Attractions</h3>
+          <h3 className="page_9_heading_sub">Attractions</h3>
         </div>
         <div className="col-9">
           <div>
@@ -118,15 +118,15 @@ export default function Page9() {
           <div className="row">
             <div className="col-12  d-flex justify-content-between align-items-top mb-2">
               <div className="d-flex align-items-top pe-2 ">
-               <div className="align-items-center pt-1"><img src={train} className="img-fluid me-2" alt="Train" /></div> 
+               <div className="align-items-center pt-1 place_div_img"><img src={train} className="img-fluid me-2" alt="Train" /></div> 
                 <p className="mb-0 page9_p_place">Bambalapitiya Railway Station</p>
               </div>
               <p className="page9_p_distance ">700m</p>
             </div>
             <div className="col-12  d-flex justify-content-between align-items-bottom mb-2">
               <div className="d-flex align-items-top pe-2">
-              <div className="align-items-center pt-1"> <img src={plane} className="img-fluid me-2 align-items-top" alt="Plane" /></div> 
-                <p className="mb-0 page9_p_place">Colombo Ratmalana Airport</p>
+              <div className="align-items-center pt-1 place_div_img"> <img src={plane} className="img-fluid me-2 align-items-top" alt="Plane" /></div> 
+                <p className="mb-0 page9_p_place ">Colombo Ratmalana Airport</p>
               </div>
               <p className="page9_p_distance">9.4km</p>
             </div>

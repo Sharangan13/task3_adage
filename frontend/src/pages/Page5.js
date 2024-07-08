@@ -44,7 +44,7 @@ export default function Page5() {
           <div onClick={toggleQuestion1} className="question">
             <span>What is included in the serviced accommodation?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer1Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer1Visible && (
@@ -65,7 +65,7 @@ export default function Page5() {
               How often are the accommodations cleaned?
             </span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer2Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer2Visible && (
@@ -84,7 +84,7 @@ export default function Page5() {
           <div onClick={toggleQuestion3} className="question">
             <span>Is Wi-Fi available?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer3Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer3Visible && (
@@ -103,7 +103,7 @@ export default function Page5() {
           <div onClick={toggleQuestion4} className="question">
             <span>Are towels and toiletries provided?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer4Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer4Visible && (
@@ -122,7 +122,7 @@ export default function Page5() {
           <div onClick={toggleQuestion5} className="question">
             <span>Is there parking available?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer5Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer5Visible && (
@@ -141,7 +141,7 @@ export default function Page5() {
           <div onClick={toggleQuestion6} className="question">
             <span>What are the check-in and check-out times?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer6Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer6Visible && (
@@ -160,7 +160,7 @@ export default function Page5() {
           <div onClick={toggleQuestion7} className="question">
             <span>Is there a minimum stay requirement?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer7Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer7Visible && (
@@ -179,7 +179,7 @@ export default function Page5() {
           <div onClick={toggleQuestion8} className="question">
             <span>Can I bring pets?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer8Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer8Visible && (
@@ -198,7 +198,7 @@ export default function Page5() {
           <div onClick={toggleQuestion9} className="question">
             <span>Is the accommodation wheelchair accessible?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer9Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer9Visible && (
@@ -217,7 +217,7 @@ export default function Page5() {
           <div onClick={toggleQuestion10} className="question">
             <span>What amenities are available nearby?</span>
             <div className="d-flex align-items-end">
-              {answer11Visible ? <FaChevronUp /> : <FaChevronDown />}
+              {answer10Visible ? <FaChevronUp /> : <FaChevronDown />}
             </div>
           </div>
           {answer10Visible && (

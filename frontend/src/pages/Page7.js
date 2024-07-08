@@ -5,13 +5,15 @@ import page7_3 from "../assets/page7_3.png";
 import page7_4 from "../assets/page7_4.png";
 import page7_5 from "../assets/page7_5.png";
 import ImageBox from "../utility/ImageBox";
-import { IoArrowBackSharp } from "react-icons/io5";
+
 import { IoCamera } from "react-icons/io5";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import { MdArrowBackIosNew } from "react-icons/md";
 
 import { MdArrowForwardIos } from "react-icons/md";
+
+import BackButton from "../layouts/BackButton";
 
 
 
@@ -22,12 +24,8 @@ export default function Page7() {
     setActiveItem(index + 1);
   };
   return (
-    <div className=" py-5">
-      <div className="d-none d-lg-block  ms-4 ps-3 mb-3">
-        <button className="page7_btn1">
-          <IoArrowBackSharp className="btn_arrow" /> Back to Homepage
-        </button>
-      </div>
+    <div className="pb-5">
+      <div className="ms-4 ps-3"><BackButton/></div>
       <div className="d-none d-lg-block">
         <div className="col-12 d-flex px-5 page7_main_div ">
           <div className="col-6 pe-2 ">

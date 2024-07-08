@@ -54,7 +54,7 @@ export default function Page6() {
                     <h1>Reach Out for Personalized Assistance</h1>
                     <p>Ready to experience luxury living in Colombo? Fill out the form below to inquire about availability, rates, and special offers. Our team is here to assist you in finding the perfect serviced apartment tailored to your needs. Start your journey with RUJ Sri Lanka now!</p>
 
-                    <div className="whatsapp-number py-2">
+                    <div className="whatsapp-number-form-footer py-2">
                     <a href="tel:+94112345678">   <img src={whatsapp} alt="WhatsApp Logo" width="35" height="30" className="d-inline-block align-center" /></a>
                     <a href="tel:+94112345678">   <span className="ms-2">+94 11 2345678</span></a>
                     </div>
@@ -152,19 +152,19 @@ export default function Page6() {
 
             <div className="d-block d-lg-none col-12">
             <div className="col-12">
-                <div className="col-12 px-3 page6_contatnt">
+                <div className="col-12 px-3 page6_contatnt_mobile">
                     <h1>Reach Out for Personalized Assistance</h1>
                     <p>Ready to experience luxury living in Colombo? Fill out the form below to inquire about availability, rates, and special offers. Our team is here to assist you in finding the perfect serviced apartment tailored to your needs. Start your journey with RUJ Sri Lanka now!</p>
 
                     <div className="whatsapp_number_footer py-2">
-                    <a href="tel:+94112345678"> <img src={whatsapp} alt="WhatsApp Logo" width="35" height="30" className="d-inline-block align-center" /></a>
+                    <a href="tel:+94112345678"> <img src={whatsapp} alt="WhatsApp Logo" width="24" height="24" className="d-inline-block align-center img-fluid" /></a>
                         
                     <a href="tel:+94112345678">  <span>+94 11 2345678</span></a>
     
                     </div>
 
                     <div className="email-address pt-1 pb-5">
-                        <img src={emaill} alt="WhatsApp Logo" width="35" height="30" />
+                        <img src={emaill} alt="WhatsApp Logo" width="24" height="24"  className="img-fluid"/>
                         <span className="ms-2">contact@rujsrilanka.lk</span>
                     </div>
                 </div>
@@ -172,9 +172,9 @@ export default function Page6() {
 
            
 
-            <div className="col-12 form_div  pb-5 pt-2 px-3 ">
+            <div className="col-12 form_div_Footer_mobile  pb-5 pt-2 px-3 ">
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-3 form_data">
+                    <div className="mb-3 form_data_mobile">
                         <input
                             type="text"
                             className="form-control"
@@ -186,7 +186,7 @@ export default function Page6() {
                             required
                         />
                     </div>
-                    <div className="mb-3 form_data">
+                    <div className="mb-3 form_data_mobile">
                         <input
                             type="email"
                             className="form-control"
@@ -198,7 +198,7 @@ export default function Page6() {
                             required
                         />
                     </div>
-                    <div className="mb-3 form_data">
+                    <div className="mb-3 form_data_mobile">
                         <input
                             type="tel"
                             className="form-control"
@@ -210,9 +210,9 @@ export default function Page6() {
                             required
                         />
                     </div>
-                    <div className="mb-3 form_data">
+                    <div className="mb-3 form_data_mobile">
                         <textarea
-                            className="form-control"
+                            className="form-control rounded-3"
                             id="message"
                             name="message"
                             value={formData.message}
@@ -222,9 +222,9 @@ export default function Page6() {
                             required
                         ></textarea>
                     </div>
-                    <div className="mb-3 ms-1 form-check">
+                    <div className="mb-3 ms-1 form-check ">
                         <input
-                            type="checkbox"
+                            type="checkbox" 
                             className="form-check-input"
                             id="acceptedPrivacyPolicy"
                             name="acceptedPrivacyPolicy"

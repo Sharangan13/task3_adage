@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.svg';
 import whatsapp from '../assets/whatsapp.svg';
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { IoArrowBackOutline } from "react-icons/io5";
 
-export default function Navbar() {
-  const [showLinks, setShowLinks] = useState(false);
 
-  const toggleLinks = () => {
-    setShowLinks(!showLinks);
-  };
 
+
+export default function NavBarOtherPages() {
+ 
   return (
     <header className='px-1 px-md-5 py-4'>
       <nav className="navbar navbar-expand-lg justify-content-center px-1 px-md-4">
@@ -22,9 +21,9 @@ export default function Navbar() {
 </a>
 
           <div className="toggle_icon_div">
-            <div className='toggle_icon d-flex' onClick={toggleLinks}>
-              <IoReorderThreeOutline />
-            </div>
+          <Link to="/">  <div className='back_icon_nav d-flex'>
+              <IoArrowBackOutline />
+            </div></Link>
           </div>
           <div className="navbar_custom1" >
             <ul className="navbar-nav">
@@ -53,7 +52,7 @@ export default function Navbar() {
           </div>
         </div>
         
-        <div className={`collapse navbar-collapse justify-content-center  navbar_custom ${showLinks ? 'show' : ''}`} id="navbarNav">
+        {/* <div className={`collapse navbar-collapse justify-content-center  navbar_custom ${showLinks ? 'show' : ''}`} id="navbarNav">
         <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink className="nav-link " to="/">Home</NavLink>
@@ -68,7 +67,7 @@ export default function Navbar() {
                 <NavLink className="nav-link" to="/contact">Contact us</NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
           
       </nav>
     </header>
