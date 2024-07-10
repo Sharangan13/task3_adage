@@ -7,94 +7,32 @@ import page10_5 from "../assets/page10_5.svg";
 import page10_6 from "../assets/page10_6.svg";
 import page10_7 from "../assets/page10_7.svg";
 
+const items = [
+  { src: page10_1, label: "24/7 Security" },
+  { src: page10_2, label: "Surveillance" },
+  { src: page10_3, label: "Fully Equipped Kitchen" },
+  { src: page10_4, label: "High Speed Internet" },
+  { src: page10_5, label: "Coffee Machine" },
+  { src: page10_6, label: "Washing Machine" },
+  { src: page10_7, label: "Iron Coffee Machine" },
+];
+
 export default function Middlebar() {
   return (
     <div className="middlebar">
-      <div className="horizontal-scroll-container col-12">
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
+      <div className="horizontal-scroll-container">
+        {items.concat(items).map((item, index) => (
+          <div key={index} className="middlebar_contant px-1 py-1 me-2 me-md-5 ">
+            <ul className="d-flex list-unstyled col-12 justify-content-between">
               <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_1} className="img-fluid me-2" />
-                  <p className="mb-0">24/7 Security</p>
+                <div className="col-md-4 d-flex align-items-center justify-conent-center">
+                  <img src={item.src} className="img-fluid me-2" />
+                  <p className="mb-0">{item.label}</p>
                 </div>
               </li>
-            </ui>
+            </ul>
           </div>
-        </div>
-        <div className="middlebar_contant ">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className=" d-flex align-items-center">
-                  <img src={page10_2} className="img-fluid me-2" />
-                  <p className="mb-0">Surveillance</p>
-                </div>
-              </li>
-            </ui>
-          </div>
-        </div>
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_3} className="img-fluid me-2" />
-                  <p className="mb-0">Fully Equipped Kitchen</p>
-                </div>{" "}
-              </li>
-            </ui>
-          </div>
-        </div>
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_4} className="img-fluid me-2" />
-                  <p className="mb-0">High Speed Internet</p>
-                </div>
-              </li>
-            </ui>
-          </div>
-        </div>
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_5} className="img-fluid me-2" />
-                  <p className="mb-0">Coffee Machine</p>
-                </div>
-              </li>
-            </ui>
-          </div>
-        </div>
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_6} className="img-fluid me-2" />
-                  <p className="mb-0">Washing Machine</p>
-                </div>
-              </li>
-            </ui>
-          </div>
-        </div>
-        <div className="middlebar_contant">
-          <div className=" px-1 py-1 me-0 me-md-5">
-            <ui className="d-flex list-unstyled col-12 justify-content-between">
-              <li>
-                <div className="col-md-4 d-flex align-items-center">
-                  <img src={page10_7} className="img-fluid me-2" />
-                  <p className="mb-0">Iron Coffee Machine</p>
-                </div>
-              </li>
-            </ui>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

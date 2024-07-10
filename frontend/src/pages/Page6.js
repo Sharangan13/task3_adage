@@ -23,7 +23,7 @@ export default function Page6() {
             [name]: type === 'checkbox' ? checked : value
         });
        
-        if (name === 'acceptedPrivacyPolicy' && checked) {
+        if (checked) {
             setValidationMessage('');
         }
     };
@@ -139,7 +139,7 @@ export default function Page6() {
                     <button
                         type="submit"
                         className="form_btn"
-                        disabled={!formData.acceptedPrivacyPolicy}
+                        
                     >
                         Submit Message
                     </button>
@@ -243,7 +243,7 @@ export default function Page6() {
                     <button
                         type="submit"
                         className="form_btn col-12"
-                        disabled={!formData.acceptedPrivacyPolicy}
+                    
                     >
                         Submit Message
                     </button>

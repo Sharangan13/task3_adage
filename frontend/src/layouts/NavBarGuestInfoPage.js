@@ -1,0 +1,45 @@
+import React, { useState } from 'react';
+import logo from '../assets/logo.svg';
+import whatsapp from '../assets/whatsapp.svg';
+import { IoReorderThreeOutline } from "react-icons/io5";
+import { Link, NavLink } from 'react-router-dom';
+import { IoArrowBackOutline } from "react-icons/io5";
+
+
+
+
+export default function NavBarGuestInfoPage() {
+ 
+  return (
+    <header className='px-1 px-md-5 py-4'>
+      <nav className="navbar navbar-expand-lg justify-content-center px-1 px-md-4">
+        <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+  <NavLink to="/" className="d-inline-block align-center flex-shrink-0">
+    <img src={logo} alt="Company Logo" width="65px" height="33px" />
+  </NavLink>
+</a>
+
+          <div className="toggle_icon_div">
+          <Link to="/">  <div className='back_icon_nav d-flex'>
+              <IoArrowBackOutline />
+            </div></Link>
+          </div>
+          
+       
+          <div className='whatsapp-number-div '>
+            <div className="whatsapp-number d-flex ">
+            <a href="tel:+94112345678"> <img src={whatsapp} alt="WhatsApp Logo" width="32" height="32" className="d-inline-block align-center" />
+              
+      <span>+94 11 2345678</span>
+    </a>
+            </div>
+          </div>
+        </div>
+        
+       
+          
+      </nav>
+    </header>
+  );
+}

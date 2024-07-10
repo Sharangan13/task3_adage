@@ -25,6 +25,9 @@ import Explore from './pages/website/Explore';
 import Contact from './pages/website/Contact';
 import ScrollToTop from './utility/ScrollToTop';
 import Booking from './pages/website/Booking';
+import NavBarGuestInfoPage from './layouts/NavBarGuestInfoPage';
+import ContinueBooking from './pages/website/ContinueBooking';
+import GuestInfoPage from './pages/GuestInfoPage';
 
 
 
@@ -39,7 +42,10 @@ function App() {
       <Route  path='/explore' element={<Explore/>}></Route>
       <Route  path='/contact' element={<Contact/>}></Route>
       <Route  path='/booking' element={<Booking/>}></Route>
-      <Route  path='/booking/reservation' element={<Page14/>}></Route>
+      <Route  path='/booking/reservation' element={<ContinueBooking/>}></Route>
+      {/* <Route  path='/booking/reservation' element={<GuestInfoPage/>}></Route> */}
+
+     
       
         
          </Routes>
@@ -69,6 +75,8 @@ function App() {
 
       
      <Page14/> */}
+
+     
       
     </div>
   );

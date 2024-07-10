@@ -15,6 +15,7 @@ export default function Booking() {
   return (
     <div>
       <NavBarOtherPages/>
+      <div className='px-0 px-md-4'>
       <Page7/>
       <Page8/>
       <Page9/>
@@ -22,6 +23,7 @@ export default function Booking() {
       <Page11_map/>
       <Page12/>
       <Page13/>
+      </div>
     </div>
   )
 }

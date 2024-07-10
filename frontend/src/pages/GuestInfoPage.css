@@ -1,0 +1,273 @@
+.guest_info_form_main_div label {
+    color: var(--Tailwind-slate-950, #020617);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.00875rem;
+  }
+  
+  .guest_info_form_main_div label span {
+    color: #E8670E;
+  }
+  
+  .input_div input {
+    border-radius: 0.5rem;
+    border: 1px solid var(--Pickled-Bluewood-200, #CFDCE8);
+    background: var(--Tailwind-white, #FFF);
+    padding: 0.7rem;
+    width: 100%;
+  }
+  
+  .date-picker-container {
+    border-radius: 0.5rem;
+    border: 1px solid var(--Pickled-Bluewood-200, #CFDCE8);
+    background: var(--Tailwind-white, #FFF);
+    padding: 0.7rem;
+    width: 100%;
+  }
+  
+  .date-picker-container .date-picker-input {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .date-picker-input::placeholder {
+    color: var(--Tailwind-slate-400, #94A3B8);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.00875rem;
+  }
+  .date-picker-container .date-picker-input:focus {
+    outline: none;
+    box-shadow: none;
+   
+  }
+
+  .calender_icon{
+    font-size: 1.5rem;
+    
+  }
+  .guest_info_form_main_div label{
+    color: var(--Tailwind-slate-950, #020617);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.00875rem;
+  }
+  
+  .guest_info_form_main_div label span{
+    color: #E8670E;
+  }
+
+  .page_guest_info_heanding_div h2{
+    color: var(--Tailwind-slate-950, #020617);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.025rem;
+  }
+
+  .page_guest_info_heanding_div .p1{
+    color: var(--Tailwind-slate-500, #64748B);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .page_guest_info_heanding_div .p2{
+    color: var(--Tailwind-slate-950, #020617);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .guest_info_main_div{
+background-color: white;
+  border: #020617;
+  border-radius: 15px;
+ 
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-right: 3.5%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  
+  font-family: "Open Sans", sans-serif;
+  }
+
+  .guest_info_page_div_main{
+    background: var(--Tailwind-zinc-100, #F4F4F5);
+  }
+
+  .Page14_form_btn {
+    border-radius: 0.625rem;
+background: var(--Medium-Red-Violet-950, #430F39);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+   padding: 20px;
+   margin-top: 1rem;
+   margin-bottom: 1.5rem;
+    font-family: Merriweather;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .form-check-input {
+ 
+    outline: none; 
+    box-shadow: none; 
+    border: 1px solid #7D2B6E;
+    font-size: large;
+  }
+  
+
+  .form-check-input:focus
+  {
+    background-color: #7D2B6E;
+    outline: none; 
+    box-shadow: none;
+    border: 1px solid #7D2B6E; 
+  }
+  
+
+  .form-check-input:checked {
+    background-color: #7D2B6E;
+    outline: none; 
+    box-shadow: none;
+    border: 1px solid #7D2B6E;
+  }
+  .page14_last_phra p{
+    color: var(--Tailwind-slate-600, #475569);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+  }
+
+  .page14_last_phra span{
+    color: var(--Tailwind-blue-600, #2563EB);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+text-decoration-line: underline;
+  }
+  
+  
+/* Mobile styles */
+@media (max-width: 576px) {
+   
+    
+  .guest_info_main_div{
+      margin-right: 0%;
+      margin-left: 0%;
+    padding: 5%;
+      
+    } 
+
+    .page_guest_info_heanding_div h2{
+        color: var(--Tailwind-slate-950, #020617);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.025rem;
+      }
+
+    .page_guest_info_heanding_div .p1{
+        color: var(--Tailwind-slate-500, #64748B);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    
+      .page_guest_info_heanding_div .p2{
+        color: var(--Tailwind-slate-950, #020617);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+      }
+      .form-check-label-page14{
+        color: var(--Tailwind-slate-600, #475569);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 450;
+line-height: 149.3%; /* 1.11975rem */
+      }
+
+      .page14_last_phra p{
+        color: var(--Tailwind-slate-600, #475569);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+      }
+    
+      .page14_last_phra span{
+        color: var(--Tailwind-blue-600, #2563EB);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 450;
+line-height: normal;
+text-decoration-line: underline;
+      }
+      
+    
+
+}

@@ -11,7 +11,7 @@ export default function Page4() {
     <div className="col-12  page4_main_div">
       <div className="pb-5 position-relative">
         <heading className="col-12 d-flex align-items-center page2-container mb-2 mb-md-5 ">
-          <div className="page2_p">
+          <div className="page2_p px-2 px-md-0">
             <p>Interesting facts <br className="d-none d-md-block"/> about <span>Colombo</span></p>
             <p>
              

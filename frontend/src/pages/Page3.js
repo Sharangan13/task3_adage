@@ -12,10 +12,10 @@ import ImageBox from '../utility/ImageBox';
 
 export default function Page3() {
   return (
-    <div className='py-5 mt-5 px-2 px-md-5 page3_main_div '>
+    <div className='pt-0 pb-5 pt-md-5  mt-5 page3_main_div '>
       <div className='row justify-content-center'>
         <heading className='col-12 d-flex align-items-center page2-container mb-5 px-3 px-md-5'>
-        <div className='page2_p'>
+        <div className='page2_p px-0 px-md-2'>
           <p>What Can <span>I Expect</span> from <br className='d-none d-md-block'/>a Serviced Apartment? </p>
           <p></p>
         </div>

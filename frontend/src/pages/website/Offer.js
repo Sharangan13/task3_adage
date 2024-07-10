@@ -4,6 +4,7 @@ import Navbar from '../../layouts/Navbar'
 import Page3 from '../Page3'
 import Page2 from '../Page2'
 import Page1 from '../Page1'
+import Page6 from '../Page6'
 
 
 export default function Offer() {
@@ -13,6 +14,7 @@ export default function Offer() {
       <Page1/>
       <Page2/>
       <Page3/>
+      <Page6/>
     </div>
   )
 }

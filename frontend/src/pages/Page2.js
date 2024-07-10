@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom';
 
 export default function Page2() {
   return (
-    <div className='col-12 px-md-5 py-md-5 mt-5'>
+    <div className='col-12  py-5 mt-5 page2_container'>
 
-      <heading className='col-12  px-2 px-md-5  d-flex align-items-center page2-container mb-5'>
-        <div className='page2_p px-2 px-md-0'>
+      <heading className='col-12 d-flex align-items-center page2-container mb-5'>
+        <div className='page2_p px-3 px-md-0'>
           <p>What is a <br/><span>Serviced Apartment?</span></p>
         </div>
         <div className='flex-grow-1'>
