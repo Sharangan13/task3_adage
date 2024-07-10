@@ -20,7 +20,7 @@ const items = [
 export default function Middlebar() {
   return (
     <div className="middlebar">
-      <div className="horizontal-scroll-container">
+      <div className="horizontal_scroll_container_middlebar">
         {items.concat(items).map((item, index) => (
           <div key={index} className="middlebar_contant px-1 py-1 me-2 me-md-5 ">
             <ul className="d-flex list-unstyled col-12 justify-content-between">

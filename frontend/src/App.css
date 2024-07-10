@@ -1669,7 +1669,7 @@ line-height: normal;
   position: relative;
 }
 
-.horizontal-scroll-container {
+.horizontal_scroll_container_middlebar {
   display: flex;
   align-items: center;
   justify-content: center;
