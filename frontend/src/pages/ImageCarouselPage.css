@@ -1,0 +1,206 @@
+.image_carousel_page_main_div {
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  position:sticky;
+  top: 0;
+  
+}
+
+.close_icon{
+width: 1.25rem;
+height: 1.25rem;
+}
+
+
+
+
+
+.image_carousel_page {
+  padding-left: 18rem;
+  padding-right: 18rem;
+  padding-top: 2rem;
+  position: relative; 
+}
+
+.carousel_page_image {
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.carousel_page_image:hover {
+  transform: scale(1.05);
+}
+
+.carousel_arrow {
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+display: flex;
+padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 10; /* Ensure buttons appear above other elements */
+}
+
+.carousel_arrow_prev {
+  left: 80px; /* Adjust to position outside the image box */
+  font-size: 2rem;
+}
+
+.carousel_arrow_next {
+  right: 80px; /* Adjust to position outside the image box */
+  font-size: 2rem;
+}
+
+.camera_icon_mobile_page {
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cancel_button {
+  background-color: transparent;
+  border-radius: 10px;
+
+ 
+  padding: 5px 15px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+
+  align-items: center;
+  cursor: pointer;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+  
+}
+.cancel_button:hover {
+background-color:gray;
+  
+}
+
+
+
+.carousel_arrow_prev:hover,
+.carousel_arrow_next:hover {
+ 
+  background-color:rgb(47, 45, 45);
+}
+
+.carousel_arrow_prev:active,
+.carousel_arrow_next:active {
+  transform: scale(0.9); 
+}
+
+/* Tablet styles */
+@media (min-width: 577px) and (max-width: 768px) {
+  .image_carousel_page {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 2rem;
+    position: relative; 
+  }
+
+  .carousel_arrow_prev {
+    left: 40px; /* Adjust to position outside the image box */
+    font-size: 1.5rem;
+  }
+  
+  .carousel_arrow_next {
+    right: 40px; /* Adjust to position outside the image box */
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Mobile styles */
+@media (max-width: 576px) {
+
+  .image_carousel_page_main_div {
+    padding-top: 40%;
+    padding-bottom: 100%;
+   
+    padding-top: 2rem;
+    
+  }
+  .image_carousel_page {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    position: relative; 
+  }
+
+  .carousel_arrow_prev {
+    left: 40px; /* Adjust to position outside the image box */
+    font-size: 1.5rem;
+    display: none;
+  }
+  
+  .carousel_arrow_next {
+    right: 40px; /* Adjust to position outside the image box */
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  .cancel_button {
+    color: var(--Tailwind-white, #FFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    
+  }
+
+  .camera_icon_mobile_page {
+    color: var(--Tailwind-white, #FFF);
+leading-trim: both;
+text-edge: cap;
+font-family: "Open Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    
+  }
+
+  .cancell_btn_div{
+    margin-bottom:20%;
+    
+  }
+  .cancel_button:hover {
+    background-color:transparent;
+      
+    }
+    .close_icon{
+      width: 1.18rem;
+      height: 1.18rem;
+      }
+
+      .image_carousel_page_main_div {
+        
+        position:fixed;
+        top: 0;
+        
+      }
+      
+     
+      
+      
+
+}
+
+
+

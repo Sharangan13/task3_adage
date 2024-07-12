@@ -174,14 +174,7 @@ export default function Page8() {
   </div>
 </div>
 
-<div className="col-12  d-flex  justify-content-between align-items-center page8_side_content sticky-bottom-md d-block d-md-none">
-       <div>
-          <p className="p1">£180</p>
-          <p className="p2">£200.44</p>
-          <p className="p3">Incl. taxes per night</p>
-          </div>
-         <Link to="reservation"><div className="Reserve_btn_sticky"><button className="col-12">Reserve</button></div></Link> 
-        </div>
+
 
 
       {/* <Modal show={modalShow} onHide={() => setModalShow(false)}>

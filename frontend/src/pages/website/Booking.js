@@ -8,6 +8,7 @@ import Page11_map from '../Page11_map'
 import Page12 from '../Page12'
 import Page13 from '../Page13'
 import NavBarOtherPages from '../../layouts/NavBarOtherPages'
+import BottomSticyBar from '../../layouts/BottomSticyBar'
 
 
 
@@ -23,6 +24,7 @@ export default function Booking() {
       <Page11_map/>
       <Page12/>
       <Page13/>
+      <BottomSticyBar/>
       </div>
     </div>
   )

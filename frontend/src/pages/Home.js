@@ -16,6 +16,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 
 
@@ -79,12 +80,12 @@ export default function Home() {
       <div className='row px-2 ps-md-4 '>
 
       
-        <div className='col-12 col-md-6 py-3 py-md-5 ps-0 ps-md-4'>
+        <div className='col-12 col-md-6 py-3 py-md-5 ps-md-4'>
           <h1 className='home_h1 pb-4'>Discover Luxury Living in Colombo with RUJ.</h1>
           <p className='home_p col-12 col-md-8 pt-2 pb-2'>Experience Unparalleled Comfort and Convenience in Our Serviced Apartments</p>
           <div className='mb-0 mb-md-4 my-2 my-md-5 d-block text-center d-md-flex '>
-           <div className='home_btn me-0 me-md-1'> <Link to="offer"><button className='col-12' >Explore Our Properties <FiArrowUpRight /></button></Link></div>
-           <div className='home_btn2 me-0 me-md-1'> <Link to="explore"><button className='col-12' >Discover Colombo <MdKeyboardArrowRight className='fs-3' /></button></Link> </div>
+           <div className='home_btn me-0 me-md-1'> <ScrollLink to="offer_page"><button className='col-12' >Explore Our Properties <FiArrowUpRight /></button></ScrollLink></div>
+           <div className='home_btn2 me-0 me-md-1'> <ScrollLink to="explore_page"><button className='col-12' >Discover Colombo <MdKeyboardArrowRight className='fs-3' /></button></ScrollLink> </div>
           </div>
           
         </div>
@@ -125,7 +126,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='mt-0 mt-md-4 home_list_3 ps-0 ps-md-4 px-5 pb-4 pb-md-5'>
+        <div className='mt-0 mt-md-4 home_list_3  ps-md-4 px-3 px-md-5 pb-4 pb-md-5'>
             <ul className='list-unstyled d-flex  justify-content-between col-12 col-md-3'>
               <li className='col-2 '><h1>20+</h1> <p>Premium <br></br>Amenities</p></li>
               <li className='col-2 '><h1>99+</h1> <p>People <br></br>Booked</p></li>

@@ -47,7 +47,7 @@ export default function Page6() {
     };
 
     return (
-        <div className="col-12 py-5 position-relative page6_main_div">
+        <div className="col-12 py-5 position-relative page6_main_div" id="contact_page">
             <div className="d-none d-lg-block">
             <div className="col-11 page6_sub_div bg-white">
                 <div className="col-5 mx-5 page6_contatnt">

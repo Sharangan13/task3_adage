@@ -1,6 +1,13 @@
  html body {
     font-family: 'Merriweather', serif;
   }
+  .text_decoration_none{
+    text-decoration: none;
+  }
+
+  .nav_barScroll_ul li{
+    cursor: pointer;
+  }
 
 .whatsapp-number {
   font-family: "Open Sans";
@@ -172,6 +179,9 @@ color: #0F172A;
 
 .page2_p span{
   font-weight: 600;
+}
+.toggle_iconm{
+  font-size: 240px;
 }
 
 .page2_content p{
@@ -954,12 +964,14 @@ hr {
 .carousel-arrow-prev {
   left: 10px;
   font-size: 2rem;
+  display: none;
 
 }
 
 .carousel-arrow-next {
   right: 10px;
   font-size: 2rem;
+  display: none;
 }
 
 .carousel-image {
@@ -1410,6 +1422,13 @@ line-height: normal;
 
 }
 
+.sticy_boX_style{
+  background: var(--Tailwind-white, #FFF);
+box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.35);
+
+  
+}
+
 .btn_design,
 .page_1_main_div::after{
 width: 100%;
@@ -1457,21 +1476,37 @@ position: absolute;
 }
 
 .toggle_icon{
-  font-size: 2.5rem;
-  color: #430F39;
+  
   cursor: pointer;
   
 }
 .back_icon_nav{
-  font-size: 2.5rem;
+  display: flex;
+width: 2.75rem;
+height: 2.75rem;
+padding: 0.625rem;
   color: #430F39;
   cursor: pointer;
+  border-radius: 0.75rem;
+background: var(--Medium-Red-Violet-50, #FDF6FC);
   
 }
-.toggle_icon_div{
-  background-color: #FDF6FC;
-  padding: 4px;
-  border-radius: 25%;
+.toggle_icon{
+  display: flex;
+width: 2.75rem;
+height: 2.75rem;
+padding: 0.625rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 0.75rem;
+background: var(--Medium-Red-Violet-50, #FDF6FC);
+
+}
+
+.toggle_icon_btnn{
+  font-size: 3rem;
+  color: #430F39;
 }
 .page_11_map_a_tag_btn{
   text-decoration: underline;
@@ -1519,6 +1554,22 @@ letter-spacing: -0.02rem;
   }
 
 
+/* Change the color of the Apply button */
+.daterangepicker .applyBtn {
+  background-color: #F78118 !important; /* Change this to your desired color */
+  color: #fff !important; /* Change text color */
+  border: none !important; /* Remove border if needed */
+  border-radius: 5px !important; /* Adjust border-radius if needed */
+}
+
+
+/* Optional: Change the color of the Cancel button */
+.daterangepicker .cancelBtn {
+   /* Change this to your desired color */
+  color: black !important; /* Change text color */
+  border: none !important; /* Remove border if needed */
+  border-radius: 5px !important; /* Adjust border-radius if needed */
+}
 
 /* General active date style */
 .daterangepicker td.active,
@@ -1532,7 +1583,8 @@ letter-spacing: -0.02rem;
 .daterangepicker td.in-range.start-date {
   background-color: #F78118 !important;
   color: #fff !important; /* Change text color of active date */
-  border-radius: 20px 0px 0px 20px !important; /* Adjust border-radius for start date */
+  border-radius: 20px 0px 0px 20px !important;
+  margin: 20px !important; /* Adjust border-radius for start date */
 }
 
 /* Specific style for the end date */
@@ -1695,7 +1747,20 @@ line-height: normal;
   justify-content: center;
 }
 
+.Header_class {
+  position: sticky;
+  background-color: transparent; 
+  
+}
 
+body {
+  padding-top:0px; 
+}
+
+.back_icon_nav_sixe{
+  font-size: 24px;
+  
+}
 
 
 
@@ -1734,7 +1799,7 @@ background-clip: text;
   .whatsapp-number-div {
     background-color: #52CB5F33;
      border-radius: 30%;
-    padding: 6px;
+   padding: 0.375rem;
     align-items: center;
     justify-content: center;
     
@@ -2344,6 +2409,76 @@ line-height: 1.625rem; /* 185.714% */
     padding-left: 0rem;
     padding-right: 0rem;
   }
+
+
+  /* Change the color of the Apply button */
+.daterangepicker .applyBtn {
+  background-color: #430F39 !important; /* Change this to your desired color */
+  color: #fff !important; /* Change text color */
+  border: none !important; /* Remove border if needed */
+  border-radius: 5px !important; /* Adjust border-radius if needed */
+}
+
+
+/* Optional: Change the color of the Cancel button */
+.daterangepicker .cancelBtn {
+   /* Change this to your desired color */
+  color: black !important; /* Change text color */
+  border: none !important; /* Remove border if needed */
+  border-radius: 5px !important; /* Adjust border-radius if needed */
+}
+
+/* General active date style */
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #430F39 !important;
+  color: #fff !important; /* Change text color of active date */
+}
+
+/* Specific style for the start date */
+.daterangepicker td.start-date,
+.daterangepicker td.in-range.start-date {
+  background-color: #430F39 !important;
+  color: #fff !important; /* Change text color of active date */
+  border-radius: 20px 0px 0px 20px !important;
+  margin: 20px !important; /* Adjust border-radius for start date */
+}
+
+/* Specific style for the end date */
+.daterangepicker td.end-date,
+.daterangepicker td.in-range.end-date {
+  background-color: #430F39 !important;
+  color: #fff !important; /* Change text color of active date */
+  border-radius: 0px 20px 20px 0px !important; /* Adjust border-radius for end date */
+}
+
+/* Style for the dates within the selected range */
+.daterangepicker td.in-range {
+  background-color: #F7D7F5 !important; /* Background color for dates within the range */
+  color: #fff !important; 
+}
+
+.Header_class {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; 
+  
+}
+
+body {
+  padding-top: 70px;
+   
+}
+
+
+
+
+
+
+
  
 }
 

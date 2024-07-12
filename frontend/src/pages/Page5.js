@@ -27,7 +27,7 @@ export default function Page5() {
   const toggleQuestion11 = () => setAnswer11Visible(!answer11Visible);
 
   return (
-    <div className="col-12 page5_main_div py-5">
+    <div className="col-12 page5_main_div py-5" >
       <div className="pb-5">
         <heading className="col-12 d-flex align-items-center page2-container mb-5">
           <div className="page2_p">

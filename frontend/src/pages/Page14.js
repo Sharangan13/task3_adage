@@ -14,6 +14,7 @@ import moment from "moment";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import "bootstrap-daterangepicker/daterangepicker.css";
 import BackButton from "../layouts/BackButton";
+import { Link } from "react-router-dom";
 
 export default function Page14() {
   // const getTomorrowDate = () => {
@@ -207,8 +208,8 @@ export default function Page14() {
             </div>
           </div>
           <div className="px-2 pt-5 pb-2 pt-md-0 pb-md-0 mt-3">
-            <button className="col-12 page2_btn_Continue_to_Pay">
-              <IoMdLock /> Continue to Pay
+          <button className="col-12 page2_btn_Continue_to_Pay d-flex align-items-center justify-content-center">
+              <IoMdLock className="fs-5 me-2"/> Continue to Pay
             </button>
           </div>
           <div className="px-4">

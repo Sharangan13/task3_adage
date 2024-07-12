@@ -63,7 +63,7 @@ export default function Page12() {
   const displayedReviews = reviews.slice(startIndex, startIndex + 2);
 
   return (
-    <div className="col-12 px-2 px-md-5 py-5" id="page12">
+    <div className="col-12 px-2 px-md-5 pt-5 py-3 py-md-5" id="page12">
       <div className="_line">
         <h1>Reviews</h1>
       </div>

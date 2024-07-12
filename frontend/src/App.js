@@ -28,6 +28,7 @@ import Booking from './pages/website/Booking';
 import NavBarGuestInfoPage from './layouts/NavBarGuestInfoPage';
 import ContinueBooking from './pages/website/ContinueBooking';
 import GuestInfoPage from './pages/GuestInfoPage';
+import ImageCarouselPage from './pages/ImageCarouselPage';
 
 
 
@@ -38,12 +39,15 @@ function App() {
 <ScrollToTop/>
       <Routes>
       <Route exact path='/' element={<HomePage/>}></Route>
-      <Route  path='/offer' element={<Offer/>}></Route>
+
+      {/* <Route  path='/offer' element={<Offer/>}></Route>
       <Route  path='/explore' element={<Explore/>}></Route>
-      <Route  path='/contact' element={<Contact/>}></Route>
+      <Route  path='/contact' element={<Contact/>}></Route> */}
+
       <Route  path='/booking' element={<Booking/>}></Route>
+      <Route  path='/booking/imagepreview' element={<ImageCarouselPage/>}></Route>
       <Route  path='/booking/reservation' element={<ContinueBooking/>}></Route>
-      {/* <Route  path='/booking/reservation' element={<GuestInfoPage/>}></Route> */}
+      {/* <Route  path='/booking/reservation/guestinfo' element={<GuestInfoPage/>}></Route> */}
 
      
       

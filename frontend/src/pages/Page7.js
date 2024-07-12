@@ -14,6 +14,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 
 import BackButton from "../layouts/BackButton";
+import { Link } from "react-router-dom";
 
 
 
@@ -27,7 +28,7 @@ export default function Page7() {
     <div className="pb-5">
       <div className="ms-4 ps-3"><BackButton/></div>
       <div className="d-none d-lg-block">
-        <div className="col-12 d-flex px-5 page7_main_div ">
+      <Link to="imagepreview">  <div className="col-12 d-flex px-5 page7_main_div ">
           <div className="col-6 pe-2 ">
             <ImageBox
               imageUrl={page7_1}
@@ -64,7 +65,7 @@ export default function Page7() {
                   boxHeight="auto"
                   borderRadiusBottomRight="20px"
                 />
-                <div className="position-absolute bottom-0 end-0">
+               <div className="position-absolute bottom-0 end-0">
                   <button className="camera_icon">
                     <IoCamera className="camera me-2" /> 10
                   </button>
@@ -72,7 +73,7 @@ export default function Page7() {
               </div>
             </div>
           </div>
-        </div>
+        </div></Link>
       </div>
 
 
@@ -83,7 +84,7 @@ export default function Page7() {
 
 
 
-      <div className="d-block d-lg-none position-relative">
+      <Link to="imagepreview">  <div className="d-block d-lg-none position-relative">
         <Carousel 
           showArrows={true}
           showThumbs={false}
@@ -139,7 +140,7 @@ export default function Page7() {
                     <IoCamera className="camera me-2" />{activeItem}/ 10
                   </button>
                 </div>
-      </div>
+      </div></Link>
     </div>
   );
 }

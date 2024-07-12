@@ -2,16 +2,20 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.svg';
 import whatsapp from '../assets/whatsapp.svg';
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { IoArrowBackOutline } from "react-icons/io5";
 
 
 
 
 export default function NavBarOtherPages() {
+  const navigate = useNavigate();
+  const handleCancel = () => {
+    navigate(-1);
+  };
  
   return (
-    <header className='px-1 px-md-5 py-4'>
+    <header className='px-1 px-md-5 py-1 py-md-4 Header_class'>
       <nav className="navbar navbar-expand-lg justify-content-center px-1 px-md-4">
         <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -21,11 +25,11 @@ export default function NavBarOtherPages() {
 </a>
 
           <div className="toggle_icon_div">
-          <Link to="/">  <div className='back_icon_nav d-flex'>
-              <IoArrowBackOutline />
-            </div></Link>
+            <div className='back_icon_nav d-flex' onClick={handleCancel}>
+              <IoArrowBackOutline className='back_icon_nav_sixe'/>
+            </div>
           </div>
-          <div className="navbar_custom1" >
+          {/* <div className="navbar_custom1" >
             <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink className="nav-link " to="/">Home</NavLink>
@@ -40,7 +44,7 @@ export default function NavBarOtherPages() {
                 <NavLink className="nav-link" to="/contact">Contact us</NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
        
           <div className='whatsapp-number-div '>
             <div className="whatsapp-number d-flex ">

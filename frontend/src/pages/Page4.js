@@ -8,7 +8,7 @@ import Box_3 from "./page4_box/Box_3";
 
 export default function Page4() {
   return (
-    <div className="col-12  page4_main_div">
+    <div className="col-12  page4_main_div" id="explore_page">
       <div className="pb-5 position-relative">
         <heading className="col-12 d-flex align-items-center page2-container mb-2 mb-md-5 ">
           <div className="page2_p px-2 px-md-0">

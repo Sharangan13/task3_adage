@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.svg';
 import whatsapp from '../assets/whatsapp.svg';
-import { IoReorderThreeOutline } from "react-icons/io5";
+import { CgMenu } from "react-icons/cg";
 import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -11,8 +12,9 @@ export default function Navbar() {
     setShowLinks(!showLinks);
   };
 
+
   return (
-    <header className='px-1 px-md-5 py-4'>
+    <header className='px-1 px-md-5 py-1 py-md-4 Header_class'>
       <nav className="navbar navbar-expand-lg justify-content-center px-1 px-md-4">
         <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -23,22 +25,22 @@ export default function Navbar() {
 
           <div className="toggle_icon_div">
             <div className='toggle_icon d-flex' onClick={toggleLinks}>
-              <IoReorderThreeOutline />
+              <CgMenu className='toggle_icon_btnn'/>
             </div>
           </div>
           <div className="navbar_custom1" >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link " to="/">Home</NavLink>
+            <ul className="navbar-nav nav_barScroll_ul">
+              <li className="nav-item" >
+                <ScrollLink className="nav-link " to="home_page" >Home</ScrollLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/offer">What We Offer?</NavLink>
+                <ScrollLink className="nav-link" to="offer_page">What We Offer?</ScrollLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/explore">Explore Colombo</NavLink>
+                <ScrollLink className="nav-link" to="explore_page">Explore Colombo</ScrollLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">Contact us</NavLink>
+                <ScrollLink className="nav-link" to="contact_page" >Contact us</ScrollLink>
               </li>
             </ul>
           </div>
@@ -54,18 +56,18 @@ export default function Navbar() {
         </div>
         
         <div className={`collapse navbar-collapse justify-content-center  navbar_custom ${showLinks ? 'show' : ''}`} id="navbarNav">
-        <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link " to="/">Home</NavLink>
+        <ul className="navbar-nav nav_barScroll_ul">
+              <li className="nav-item" >
+                <ScrollLink className="nav-link " to="home_page" onClick={toggleLinks} offset={-70}>Home</ScrollLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/offer">What We Offer?</NavLink>
+              <li className="nav-item" >
+                <ScrollLink className="nav-link" to="offer_page" onClick={toggleLinks} offset={-70}>What We Offer?</ScrollLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/explore">Explore Colombo</NavLink>
+              <li className="nav-item" >
+                <ScrollLink className="nav-link" to="explore_page" onClick={toggleLinks} offset={-70}>Explore Colombo</ScrollLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">Contact us</NavLink>
+              <li className="nav-item" >
+                <ScrollLink className="nav-link" to="contact_page" onClick={toggleLinks} offset={-70}>Contact us</ScrollLink>
               </li>
             </ul>
           </div>

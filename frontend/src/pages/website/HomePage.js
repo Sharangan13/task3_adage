@@ -12,7 +12,7 @@ import Page7 from "../Page7";
 function HomePage() {
   return (
     <div>
-    <div className="home_page_new">
+    <div className="home_page_new" id="home_page">
       <Navbar />
       <Home />
       

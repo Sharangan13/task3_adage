@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 export default function Page1() {
   return (
-    <div >
+    <div id="offer_page">
     <div className="page_1_main_div position-relative d-none d-md-block">
     <div className="col-12 d-flex px-5 page1">
       <div className="col-6 ps-4">
